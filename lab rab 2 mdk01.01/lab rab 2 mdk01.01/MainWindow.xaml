@@ -1,0 +1,25 @@
+﻿<Window x:Class="lab_rab_2_mdk01._01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab_rab_2_mdk01._01"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="Purple">
+        <Menu Background="Gray">
+        </Menu>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Content="Сторона 1:" />
+            <TextBox x:Name="side1TextBox" Width="100" />
+            <Label Content="Сторона 2:" />
+            <TextBox x:Name="side2TextBox" Width="100" />
+            <Label Content="Сторона 3:" />
+            <TextBox x:Name="side3TextBox" Width="100" />
+            <CheckBox x:Name="perimeterCheckBox" Content="Периметр" />
+            <CheckBox x:Name="areaCheckBox" Content="Область" />
+            <Button Content="Выполнить" Width="99" Click="Calc_Click" Height="27" />
+        </StackPanel>
+        <Button Content="Выход" Click="Exit_Click" Margin="329,345,329,30"/>
+    </Grid>
+</Window>

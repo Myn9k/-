@@ -1,0 +1,131 @@
+﻿<Window x:Class="Lab_12.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_12"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="800">
+    <Window.Resources>
+        <Style TargetType="Image">
+            <Setter Property="Margin" Value="5 0 0 0"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="115"/>
+        </Style>
+        <Style TargetType="Path">
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation To="Green" Storyboard.TargetProperty="Fill.(SolidColorBrush.Color)" Duration="0:0:1"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation From="Green" Storyboard.TargetProperty="Fill.(SolidColorBrush.Color)" Duration="0:0:1"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="Grid" x:Key="Mash">
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="MouseDown">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="4" Duration="0:0:2" />
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="4" Duration="0:0:2" />
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" BeginTime="0:0:6" To="1" Duration="0:0:2" />
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" BeginTime="0:0:6" To="1" Duration="0:0:2" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="Image" x:Key="imageMash">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="115"/>
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="MouseDown">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="4" Duration="0:0:2" />
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="4" Duration="0:0:2" />
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" BeginTime="0:0:6" To="1" Duration="0:0:2" />
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" BeginTime="0:0:6" To="1" Duration="0:0:2" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Grid VerticalAlignment="Top" Style="{DynamicResource Mash}">
+                <Path Stroke="Red" Fill="Red" Data="M10,100 L50,10 110,100" />
+                <Path Stroke="White" Fill="White" Data="M20,95 L52,22 100,95" />
+                <Grid.RenderTransform>
+                    <ScaleTransform ScaleX="1" ScaleY="1" CenterX="-90" CenterY="1"/>
+                </Grid.RenderTransform>
+            </Grid>
+            <Grid VerticalAlignment="Top">
+                <Image Source="C:\\Users\\ыыыы\\source\\repos\\lab_12\\1.png" Style="{DynamicResource imageMash}">
+                    <Image.RenderTransform>
+                        <ScaleTransform ScaleX="1" ScaleY="1" CenterX="-90" CenterY="1"/>
+                    </Image.RenderTransform>
+                </Image>
+            </Grid>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Grid VerticalAlignment="Top" Style="{DynamicResource Mash}">
+                <Path Stroke="Red" Fill="Red" Data="M10,100 L50,10 110,100" />
+                <Path Stroke="White" Fill="White" Data="M20,95 L52,22 100,95" />
+                <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="43">
+                    <Ellipse Fill="Red" Width="15" Height="15"/>
+                    <Ellipse Fill="Yellow" Width="15" Height="15"/>
+                    <Ellipse Fill="Green" Width="15" Height="15"/>
+                </StackPanel>
+                <Grid.RenderTransform>
+                    <ScaleTransform ScaleX="1" ScaleY="1" CenterX="-90" CenterY="60"/>
+                </Grid.RenderTransform>
+            </Grid>
+            <Grid VerticalAlignment="Top">
+                <Image Source="C:\\Users\\ыыыы\\source\\repos\\lab_12\\2.png" Style="{DynamicResource imageMash}">
+                    <Image.RenderTransform>
+                        <ScaleTransform ScaleX="1" ScaleY="1" CenterX="-90" CenterY="60"/>
+                    </Image.RenderTransform>
+                </Image>
+            </Grid>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <Grid VerticalAlignment="Top" Style="{DynamicResource Mash}">
+                <Path Stroke="Red" Fill="Red" Data="M10,100 L50,10 110,100" />
+                <Path Stroke="White" Fill="White" Data="M20,95 L52,22 100,95" />
+                <Path Stroke="Black" StrokeThickness="10" Data="M55,45 55,90" />
+                <Path Stroke="Black" StrokeThickness="3" Data="M75,65 35,65" />
+                <Grid.RenderTransform>
+                    <ScaleTransform ScaleX="1" ScaleY="1" CenterX="-90" CenterY="30"/>
+                </Grid.RenderTransform>
+            </Grid>
+            <Grid VerticalAlignment="Top">
+                <Image Source="C:\\Users\\ыыыы\\source\\repos\\lab_12\\3.png" Style="{DynamicResource imageMash}">
+                    <Image.RenderTransform>
+                        <ScaleTransform ScaleX="1" ScaleY="1" CenterX="-90" CenterY="30"/>
+                    </Image.RenderTransform>
+                </Image>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

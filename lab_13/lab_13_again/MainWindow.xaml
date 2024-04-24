@@ -1,0 +1,68 @@
+﻿<Window x:Class="lab_13_again.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab_13_again"
+        mc:Ignorable="d"
+        Title="По часовой" Height="450" Width="800">
+    <Window.Resources>
+        <PathGeometry x:Key="PathAnimation">
+            <PathFigure StartPoint="100,200" IsClosed="True">
+                <BezierSegment Point1="100,100" Point2="600,100" Point3="600,200"/>
+                <LineSegment Point="350, 400"/>
+            </PathFigure>
+        </PathGeometry>
+    </Window.Resources>
+    <Canvas>
+        <Path StrokeThickness="3" Data="{StaticResource ResourceKey=PathAnimation}" />
+        <Image Height="100" Source="C:\Users\ыыыы\source\repos\lab_13\lab_13_again\Resources\images1.jpg">
+            <Image.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard RepeatBehavior="Forever">
+                            <DoubleAnimationUsingPath Storyboard.TargetProperty="(Canvas.Left)" Duration="0:0:4" PathGeometry="{StaticResource ResourceKey=PathAnimation}" Source="X"/>
+                            <DoubleAnimationUsingPath Storyboard.TargetProperty="(Canvas.Top)" Duration="0:0:4" PathGeometry="{StaticResource ResourceKey=PathAnimation}" Source="Y" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Image.Triggers>
+        </Image>
+        <Image Height="100" Source="C:\Users\ыыыы\source\repos\lab_13\lab_13_again\Resources\istockphoto-175713154-612x612.jpg">
+            <Image.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard RepeatBehavior="Forever">
+                            <DoubleAnimationUsingPath Storyboard.TargetProperty="(Canvas.Left)" RepeatBehavior="Forever" Duration="0:0:4" PathGeometry="{StaticResource ResourceKey=PathAnimation}"  Source="X" BeginTime="0:0:1"/>
+                            <DoubleAnimationUsingPath Storyboard.TargetProperty="(Canvas.Top)" RepeatBehavior="Forever" Duration="0:0:4" PathGeometry="{StaticResource ResourceKey=PathAnimation}"  Source="Y" BeginTime="0:0:1" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Image.Triggers>
+        </Image>
+        <Image Height="100" Source="C:\Users\ыыыы\source\repos\lab_13\lab_13_again\Resources\екркрке.jpg">
+            <Image.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard RepeatBehavior="Forever">
+                            <DoubleAnimationUsingPath Storyboard.TargetProperty="(Canvas.Left)" RepeatBehavior="Forever" Duration="0:0:4" PathGeometry="{StaticResource ResourceKey=PathAnimation}"  Source="X" BeginTime="0:0:2"/>
+                            <DoubleAnimationUsingPath Storyboard.TargetProperty="(Canvas.Top)" RepeatBehavior="Forever" Duration="0:0:4" PathGeometry="{StaticResource ResourceKey=PathAnimation}"  Source="Y" BeginTime="0:0:2" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Image.Triggers>
+        </Image>
+        <Image Height="100" Source="C:\Users\ыыыы\source\repos\lab_13\lab_13_again\Resources\images2.png">
+            <Image.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard RepeatBehavior="Forever">
+                            <DoubleAnimationUsingPath Storyboard.TargetProperty="(Canvas.Left)" RepeatBehavior="Forever" Duration="0:0:4" PathGeometry="{StaticResource ResourceKey=PathAnimation}"  Source="X" BeginTime="0:0:3"/>
+                            <DoubleAnimationUsingPath Storyboard.TargetProperty="(Canvas.Top)" RepeatBehavior="Forever" Duration="0:0:4" PathGeometry="{StaticResource ResourceKey=PathAnimation}"  Source="Y" BeginTime="0:0:3" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Image.Triggers>
+        </Image>
+    </Canvas>
+</Window>

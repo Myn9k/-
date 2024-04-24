@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище pr4_PolyakovModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Пользователь">
+          <Key>
+            <PropertyRef Name="КодПользователя" />
+          </Key>
+          <Property Name="Фамилия" Type="nvarchar" MaxLength="50" />
+          <Property Name="Имя" Type="nvarchar" MaxLength="50" />
+          <Property Name="ЭлектронныйАдрес" Type="nvarchar" MaxLength="50" />
+          <Property Name="Пароль" Type="nvarchar" MaxLength="50" />
+          <Property Name="КодовоеСлово" Type="nvarchar" MaxLength="50" />
+          <Property Name="ОтветНаСекретныйВопрос" Type="nvarchar" MaxLength="50" />
+          <Property Name="КодСекретногоВопроса" Type="int" />
+          <Property Name="КодПользователя" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="СекретныйВопрос">
+          <Key>
+            <PropertyRef Name="КодСекретногоВопроса" />
+          </Key>
+          <Property Name="КодСекретногоВопроса" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="СекретныйВопрос" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Пользователь_СекретныйВопрос">
+          <End Role="СекретныйВопрос" Type="Self.СекретныйВопрос" Multiplicity="0..1" />
+          <End Role="Пользователь" Type="Self.Пользователь" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="СекретныйВопрос">
+              <PropertyRef Name="КодСекретногоВопроса" />
+            </Principal>
+            <Dependent Role="Пользователь">
+              <PropertyRef Name="КодСекретногоВопроса" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище pr4_PolyakovModelContainer">
+          <EntitySet Name="Пользователь" EntityType="Self.Пользователь" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="СекретныйВопрос" EntityType="Self.СекретныйВопрос" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Пользователь_СекретныйВопрос" Association="Self.FK_Пользователь_СекретныйВопрос">
+            <End Role="СекретныйВопрос" EntitySet="СекретныйВопрос" />
+            <End Role="Пользователь" EntitySet="Пользователь" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="pr4_PolyakovModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Пользователь">
+          <Key>
+            <PropertyRef Name="КодПользователя" />
+          </Key>
+          <Property Name="Фамилия" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Имя" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ЭлектронныйАдрес" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Пароль" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="КодовоеСлово" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ОтветНаСекретныйВопрос" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="КодСекретногоВопроса" Type="Int32" />
+          <Property Name="КодПользователя" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="СекретныйВопрос" Relationship="Self.FK_Пользователь_СекретныйВопрос" FromRole="Пользователь" ToRole="СекретныйВопрос" />
+        </EntityType>
+        <EntityType Name="СекретныйВопрос">
+          <Key>
+            <PropertyRef Name="КодСекретногоВопроса" />
+          </Key>
+          <Property Name="КодСекретногоВопроса" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="СекретныйВопрос1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Пользователь" Relationship="Self.FK_Пользователь_СекретныйВопрос" FromRole="СекретныйВопрос" ToRole="Пользователь" />
+        </EntityType>
+        <Association Name="FK_Пользователь_СекретныйВопрос">
+          <End Role="СекретныйВопрос" Type="Self.СекретныйВопрос" Multiplicity="0..1" />
+          <End Role="Пользователь" Type="Self.Пользователь" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="СекретныйВопрос">
+              <PropertyRef Name="КодСекретногоВопроса" />
+            </Principal>
+            <Dependent Role="Пользователь">
+              <PropertyRef Name="КодСекретногоВопроса" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="pr4_PolyakovEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Пользователь" EntityType="Self.Пользователь" />
+          <EntitySet Name="СекретныйВопрос" EntityType="Self.СекретныйВопрос" />
+          <AssociationSet Name="FK_Пользователь_СекретныйВопрос" Association="Self.FK_Пользователь_СекретныйВопрос">
+            <End Role="СекретныйВопрос" EntitySet="СекретныйВопрос" />
+            <End Role="Пользователь" EntitySet="Пользователь" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище pr4_PolyakovModelContainer" CdmEntityContainer="pr4_PolyakovEntities">
+          <EntitySetMapping Name="Пользователь">
+            <EntityTypeMapping TypeName="pr4_PolyakovModel.Пользователь">
+              <MappingFragment StoreEntitySet="Пользователь">
+                <ScalarProperty Name="Фамилия" ColumnName="Фамилия" />
+                <ScalarProperty Name="Имя" ColumnName="Имя" />
+                <ScalarProperty Name="ЭлектронныйАдрес" ColumnName="ЭлектронныйАдрес" />
+                <ScalarProperty Name="Пароль" ColumnName="Пароль" />
+                <ScalarProperty Name="КодовоеСлово" ColumnName="КодовоеСлово" />
+                <ScalarProperty Name="ОтветНаСекретныйВопрос" ColumnName="ОтветНаСекретныйВопрос" />
+                <ScalarProperty Name="КодСекретногоВопроса" ColumnName="КодСекретногоВопроса" />
+                <ScalarProperty Name="КодПользователя" ColumnName="КодПользователя" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="СекретныйВопрос">
+            <EntityTypeMapping TypeName="pr4_PolyakovModel.СекретныйВопрос">
+              <MappingFragment StoreEntitySet="СекретныйВопрос">
+                <ScalarProperty Name="КодСекретногоВопроса" ColumnName="КодСекретногоВопроса" />
+                <ScalarProperty Name="СекретныйВопрос1" ColumnName="СекретныйВопрос" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

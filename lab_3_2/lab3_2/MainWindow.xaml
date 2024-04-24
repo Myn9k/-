@@ -1,0 +1,91 @@
+﻿<Window x:Class="lab3_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab3_2"
+        mc:Ignorable="d"
+        Title="Paint(На минималках)" Height="600" Width="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Menu Background="White" BorderBrush="DarkBlue" BorderThickness="1">
+            <MenuItem Header="Размер кисти">
+                <MenuItem Header="2x2" Click="ChangeSize2"/>
+                <MenuItem Header="5x5" Click="ChangeSize5"/>
+                <MenuItem Header="8x8" Click="ChangeSize8"/>
+                <MenuItem Header="16x16" Click="ChangeSize16"/>
+                <Slider Minimum="1" Maximum="199" ValueChanged="Slider_ValueChanged" x:Name="SliderSize" Width="200"/>
+                <Separator />
+            </MenuItem>
+            <MenuItem Header="Цвета">
+                <MenuItem Header="Черный" Click="ChangeColorBlack" >
+                    <Ellipse Height="15" Width="15" VerticalAlignment="Center"
+                                     DockPanel.Dock="Left">
+                        <Ellipse.Fill>
+                            <SolidColorBrush Color="Black"></SolidColorBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                </MenuItem>
+                <MenuItem Header="Красный" Click="ChangeColorRed" >
+                    <Ellipse Height="15" Width="15" VerticalAlignment="Center"
+                                     DockPanel.Dock="Left">
+                        <Ellipse.Fill>
+                            <SolidColorBrush Color="Red"></SolidColorBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                </MenuItem>
+                <MenuItem Header="Синий" Click="ChangeColorBlue" >
+                    <Ellipse Height="15" Width="15" VerticalAlignment="Center"
+                                     DockPanel.Dock="Left">
+                        <Ellipse.Fill>
+                            <SolidColorBrush Color="Blue"></SolidColorBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                </MenuItem>
+                <MenuItem Header="Зеленый" Click="ChangeColorGreen" >
+                    <Ellipse Height="15" Width="15" VerticalAlignment="Center"
+                                     DockPanel.Dock="Left">
+                        <Ellipse.Fill>
+                            <SolidColorBrush Color="Green"></SolidColorBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                </MenuItem>
+                <MenuItem Header="Желтый" Click="ChangeColorYellow" >
+                    <Ellipse Height="15" Width="15" VerticalAlignment="Center"
+                                     DockPanel.Dock="Left">
+                        <Ellipse.Fill>
+                            <SolidColorBrush Color="Yellow"></SolidColorBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                </MenuItem>
+                <MenuItem Header="Белый" Click="ChangeColorWhite" >
+                    <Ellipse Height="15" Width="15" VerticalAlignment="Center"
+                                     DockPanel.Dock="Left">
+                        <Ellipse.Fill>
+                            <SolidColorBrush Color="White"></SolidColorBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Фон">
+                <MenuItem Header="Черный" Click="ChangeBGBlack" />
+                <MenuItem Header="Красный" Click="ChangeBGRed" />
+                <MenuItem Header="Синий" Click="ChangeBGBlue" />
+                <MenuItem Header="Зеленый" Click="ChangeBGGreen" />
+                <MenuItem Header="Желтый" Click="ChangeBGYellow" />
+                <MenuItem Header="Белый" Click="ChangeBGWhite" />
+            </MenuItem>
+            <MenuItem Header="Закрыть" Click="CloseWindow"/>
+        </Menu>
+        <InkCanvas Grid.Row="1" x:Name="Paint">
+            <InkCanvas.DefaultDrawingAttributes>
+                <DrawingAttributes x:Name="Brush" Color="Black" Height="5" Width="5"/>
+            </InkCanvas.DefaultDrawingAttributes>
+        </InkCanvas>
+        <Label Grid.Row="3" BorderThickness="1" BorderBrush="DarkBlue">Сделанно мной(Поляков Р.Р)</Label>
+    </Grid>
+</Window>

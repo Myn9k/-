@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище pr4_PolyakovModelContainer" CdmEntityContainer="pr4_PolyakovEntities">
+    <EntitySetMapping Name="Пользователь">
+      <EntityTypeMapping TypeName="pr4_PolyakovModel.Пользователь">
+        <MappingFragment StoreEntitySet="Пользователь">
+          <ScalarProperty Name="Фамилия" ColumnName="Фамилия" />
+          <ScalarProperty Name="Имя" ColumnName="Имя" />
+          <ScalarProperty Name="ЭлектронныйАдрес" ColumnName="ЭлектронныйАдрес" />
+          <ScalarProperty Name="Пароль" ColumnName="Пароль" />
+          <ScalarProperty Name="КодовоеСлово" ColumnName="КодовоеСлово" />
+          <ScalarProperty Name="ОтветНаСекретныйВопрос" ColumnName="ОтветНаСекретныйВопрос" />
+          <ScalarProperty Name="КодСекретногоВопроса" ColumnName="КодСекретногоВопроса" />
+          <ScalarProperty Name="КодПользователя" ColumnName="КодПользователя" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="СекретныйВопрос">
+      <EntityTypeMapping TypeName="pr4_PolyakovModel.СекретныйВопрос">
+        <MappingFragment StoreEntitySet="СекретныйВопрос">
+          <ScalarProperty Name="КодСекретногоВопроса" ColumnName="КодСекретногоВопроса" />
+          <ScalarProperty Name="СекретныйВопрос1" ColumnName="СекретныйВопрос" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

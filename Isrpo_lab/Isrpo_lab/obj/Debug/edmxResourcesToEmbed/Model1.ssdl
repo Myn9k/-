@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище pr4_PolyakovModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Пользователь">
+    <Key>
+      <PropertyRef Name="КодПользователя" />
+    </Key>
+    <Property Name="Фамилия" Type="nvarchar" MaxLength="50" />
+    <Property Name="Имя" Type="nvarchar" MaxLength="50" />
+    <Property Name="ЭлектронныйАдрес" Type="nvarchar" MaxLength="50" />
+    <Property Name="Пароль" Type="nvarchar" MaxLength="50" />
+    <Property Name="КодовоеСлово" Type="nvarchar" MaxLength="50" />
+    <Property Name="ОтветНаСекретныйВопрос" Type="nvarchar" MaxLength="50" />
+    <Property Name="КодСекретногоВопроса" Type="int" />
+    <Property Name="КодПользователя" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="СекретныйВопрос">
+    <Key>
+      <PropertyRef Name="КодСекретногоВопроса" />
+    </Key>
+    <Property Name="КодСекретногоВопроса" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="СекретныйВопрос" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Пользователь_СекретныйВопрос">
+    <End Role="СекретныйВопрос" Type="Self.СекретныйВопрос" Multiplicity="0..1" />
+    <End Role="Пользователь" Type="Self.Пользователь" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="СекретныйВопрос">
+        <PropertyRef Name="КодСекретногоВопроса" />
+      </Principal>
+      <Dependent Role="Пользователь">
+        <PropertyRef Name="КодСекретногоВопроса" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище pr4_PolyakovModelContainer">
+    <EntitySet Name="Пользователь" EntityType="Self.Пользователь" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="СекретныйВопрос" EntityType="Self.СекретныйВопрос" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Пользователь_СекретныйВопрос" Association="Self.FK_Пользователь_СекретныйВопрос">
+      <End Role="СекретныйВопрос" EntitySet="СекретныйВопрос" />
+      <End Role="Пользователь" EntitySet="Пользователь" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

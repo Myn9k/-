@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="pr4_PolyakovModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Пользователь">
+    <Key>
+      <PropertyRef Name="КодПользователя" />
+    </Key>
+    <Property Name="Фамилия" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Имя" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ЭлектронныйАдрес" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Пароль" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="КодовоеСлово" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ОтветНаСекретныйВопрос" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="КодСекретногоВопроса" Type="Int32" />
+    <Property Name="КодПользователя" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="СекретныйВопрос" Relationship="Self.FK_Пользователь_СекретныйВопрос" FromRole="Пользователь" ToRole="СекретныйВопрос" />
+  </EntityType>
+  <EntityType Name="СекретныйВопрос">
+    <Key>
+      <PropertyRef Name="КодСекретногоВопроса" />
+    </Key>
+    <Property Name="КодСекретногоВопроса" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="СекретныйВопрос1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Пользователь" Relationship="Self.FK_Пользователь_СекретныйВопрос" FromRole="СекретныйВопрос" ToRole="Пользователь" />
+  </EntityType>
+  <Association Name="FK_Пользователь_СекретныйВопрос">
+    <End Role="СекретныйВопрос" Type="Self.СекретныйВопрос" Multiplicity="0..1" />
+    <End Role="Пользователь" Type="Self.Пользователь" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="СекретныйВопрос">
+        <PropertyRef Name="КодСекретногоВопроса" />
+      </Principal>
+      <Dependent Role="Пользователь">
+        <PropertyRef Name="КодСекретногоВопроса" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="pr4_PolyakovEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Пользователь" EntityType="Self.Пользователь" />
+    <EntitySet Name="СекретныйВопрос" EntityType="Self.СекретныйВопрос" />
+    <AssociationSet Name="FK_Пользователь_СекретныйВопрос" Association="Self.FK_Пользователь_СекретныйВопрос">
+      <End Role="СекретныйВопрос" EntitySet="СекретныйВопрос" />
+      <End Role="Пользователь" EntitySet="Пользователь" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

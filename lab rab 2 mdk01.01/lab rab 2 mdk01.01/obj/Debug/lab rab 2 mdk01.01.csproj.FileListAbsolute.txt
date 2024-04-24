@@ -1,0 +1,31 @@
+\\192.168.1.200\Student\! 3 курс\! ИСиП-21-1П\Krivosheev\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.csproj.AssemblyReference.cache
+\\192.168.1.200\Student\! 3 курс\! ИСиП-21-1П\Krivosheev\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.csproj.SuggestedBindingRedirects.cache
+\\192.168.1.200\Student\! 3 курс\! ИСиП-21-1П\Krivosheev\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\MainWindow.g.cs
+\\192.168.1.200\Student\! 3 курс\! ИСиП-21-1П\Krivosheev\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\App.g.cs
+\\192.168.1.200\Student\! 3 курс\! ИСиП-21-1П\Krivosheev\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01_MarkupCompile.cache
+\\192.168.1.200\Student\! 3 курс\! ИСиП-21-1П\Krivosheev\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01_MarkupCompile.lref
+\\192.168.1.200\Student\! 3 курс\! ИСиП-21-1П\Krivosheev\lab rab 2 mdk01.01\lab rab 2 mdk01.01\bin\Debug\lab rab 2 mdk01.01.exe.config
+\\192.168.1.200\Student\! 3 курс\! ИСиП-21-1П\Krivosheev\lab rab 2 mdk01.01\lab rab 2 mdk01.01\bin\Debug\lab rab 2 mdk01.01.exe
+\\192.168.1.200\Student\! 3 курс\! ИСиП-21-1П\Krivosheev\lab rab 2 mdk01.01\lab rab 2 mdk01.01\bin\Debug\lab rab 2 mdk01.01.pdb
+\\192.168.1.200\Student\! 3 курс\! ИСиП-21-1П\Krivosheev\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\MainWindow.baml
+\\192.168.1.200\Student\! 3 курс\! ИСиП-21-1П\Krivosheev\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.g.resources
+\\192.168.1.200\Student\! 3 курс\! ИСиП-21-1П\Krivosheev\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab_rab_2_mdk01._01.Properties.Resources.resources
+\\192.168.1.200\Student\! 3 курс\! ИСиП-21-1П\Krivosheev\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.csproj.GenerateResource.cache
+\\192.168.1.200\Student\! 3 курс\! ИСиП-21-1П\Krivosheev\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.csproj.CoreCompileInputs.cache
+\\192.168.1.200\Student\! 3 курс\! ИСиП-21-1П\Krivosheev\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.exe
+\\192.168.1.200\Student\! 3 курс\! ИСиП-21-1П\Krivosheev\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.pdb
+C:\Users\М9\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\bin\Debug\lab rab 2 mdk01.01.exe.config
+C:\Users\М9\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\bin\Debug\lab rab 2 mdk01.01.exe
+C:\Users\М9\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\bin\Debug\lab rab 2 mdk01.01.pdb
+C:\Users\М9\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.csproj.AssemblyReference.cache
+C:\Users\М9\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\MainWindow.g.cs
+C:\Users\М9\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\App.g.cs
+C:\Users\М9\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01_MarkupCompile.cache
+C:\Users\М9\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01_MarkupCompile.lref
+C:\Users\М9\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\MainWindow.baml
+C:\Users\М9\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.g.resources
+C:\Users\М9\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab_rab_2_mdk01._01.Properties.Resources.resources
+C:\Users\М9\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.csproj.GenerateResource.cache
+C:\Users\М9\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.csproj.CoreCompileInputs.cache
+C:\Users\М9\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.exe
+C:\Users\М9\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.pdb
