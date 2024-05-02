@@ -24,11 +24,11 @@ namespace lab_11
         public MainWindow()
         {
             InitializeComponent();
-            two.ImgLabel.Content = "C:\\Users\\ыыыы\\source\\repos\\lab_11\\img\\3.jpg";
-            three.ImgLabel.Content = "C:\\Users\\ыыыы\\source\\repos\\lab_11\\img\\4.jpg";
-            four.ImgLabel.Content = "C:\\Users\\ыыыы\\source\\repos\\lab_11\\img\\5.jpg";
-            five.ImgLabel.Content = "C:\\Users\\ыыыы\\source\\repos\\lab_11\\img\\6.jpg";
-            six.ImgLabel.Content = "C:\\Users\\ыыыы\\source\\repos\\lab_11\\img\\8.jpg";
+            two.ImgLabel.Content = "C:\\Users\\у\\Desktop\\lab_11\\img\\3.jpg";
+            three.ImgLabel.Content = "C:\\Users\\у\\Desktop\\lab_11\\img\\4.jpg";
+            four.ImgLabel.Content = "C:\\Users\\у\\Desktop\\lab_11\\img\\5.jpg";
+            five.ImgLabel.Content = "C:\\Users\\у\\Desktop\\lab_11\\img\\8.jpg";
+            six.ImgLabel.Content = "C:\\Users\\у\\Desktop\\lab_11\\img\\10.jpg";
         }
     }
 }

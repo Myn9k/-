@@ -121,6 +121,10 @@ namespace labb_3
             mesh.TriangleIndices.Add(19);
             mesh.TriangleIndices.Add(17); mesh.TriangleIndices.Add(17);
             mesh.TriangleIndices.Add(19);
+            mesh.TriangleIndices.Add(19); mesh.TriangleIndices.Add(17);
+            mesh.TriangleIndices.Add(9);
+            mesh.TriangleIndices.Add(9); mesh.TriangleIndices.Add(17);
+            mesh.TriangleIndices.Add(19);
 
 
 

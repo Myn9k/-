@@ -29,3 +29,18 @@ C:\Users\М9\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 m
 C:\Users\М9\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.csproj.CoreCompileInputs.cache
 C:\Users\М9\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.exe
 C:\Users\М9\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.pdb
+C:\Users\у\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\bin\Debug\lab rab 2 mdk01.01.exe.config
+C:\Users\у\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\bin\Debug\lab rab 2 mdk01.01.exe
+C:\Users\у\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\bin\Debug\lab rab 2 mdk01.01.pdb
+C:\Users\у\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.csproj.AssemblyReference.cache
+C:\Users\у\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\MainWindow.g.cs
+C:\Users\у\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\App.g.cs
+C:\Users\у\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01_MarkupCompile.cache
+C:\Users\у\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01_MarkupCompile.lref
+C:\Users\у\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\MainWindow.baml
+C:\Users\у\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.g.resources
+C:\Users\у\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab_rab_2_mdk01._01.Properties.Resources.resources
+C:\Users\у\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.csproj.GenerateResource.cache
+C:\Users\у\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.csproj.CoreCompileInputs.cache
+C:\Users\у\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.exe
+C:\Users\у\Desktop\lab rab 2 mdk01.01\lab rab 2 mdk01.01\obj\Debug\lab rab 2 mdk01.01.pdb

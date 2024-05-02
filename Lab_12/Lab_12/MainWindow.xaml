@@ -81,7 +81,7 @@
                 </Grid.RenderTransform>
             </Grid>
             <Grid VerticalAlignment="Top">
-                <Image Source="C:\\Users\\ыыыы\\source\\repos\\lab_12\\1.png" Style="{DynamicResource imageMash}">
+                <Image Source="C:\Users\у\Desktop\Lab_12\1.png" Style="{DynamicResource imageMash}">
                     <Image.RenderTransform>
                         <ScaleTransform ScaleX="1" ScaleY="1" CenterX="-90" CenterY="1"/>
                     </Image.RenderTransform>
@@ -102,7 +102,7 @@
                 </Grid.RenderTransform>
             </Grid>
             <Grid VerticalAlignment="Top">
-                <Image Source="C:\\Users\\ыыыы\\source\\repos\\lab_12\\2.png" Style="{DynamicResource imageMash}">
+                <Image Source="C:\Users\у\Desktop\Lab_12\2.png" Style="{DynamicResource imageMash}">
                     <Image.RenderTransform>
                         <ScaleTransform ScaleX="1" ScaleY="1" CenterX="-90" CenterY="60"/>
                     </Image.RenderTransform>
@@ -120,7 +120,7 @@
                 </Grid.RenderTransform>
             </Grid>
             <Grid VerticalAlignment="Top">
-                <Image Source="C:\\Users\\ыыыы\\source\\repos\\lab_12\\3.png" Style="{DynamicResource imageMash}">
+                <Image Source="C:\Users\у\Desktop\Lab_12\3.png" Style="{DynamicResource imageMash}">
                     <Image.RenderTransform>
                         <ScaleTransform ScaleX="1" ScaleY="1" CenterX="-90" CenterY="30"/>
                     </Image.RenderTransform>

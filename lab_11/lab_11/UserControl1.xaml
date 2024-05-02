@@ -9,9 +9,9 @@
     <StackPanel Background="White">
         <Label Content="" x:Name="ImgLabel" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <Image Name="imgView" Source="{Binding ElementName=ImgLabel, Path=Content}"/>
-        <Grid>
-            <Button Content="Повернуть влево" HorizontalAlignment="Left" Click="RotateLeft_Click"/>
-            <Button Content="Повернуть вправо" HorizontalAlignment="Center" Click="RotateRight_Click"/>
-        </Grid>
+        <Canvas>
+            <Button Content="Повернуть влево" HorizontalAlignment="Left" Click="RotateLeft_Click" Canvas.Left="20"/>
+            <Button Content="Повернуть вправо" HorizontalAlignment="Center" Click="RotateRight_Click" Canvas.Left="150"/>
+        </Canvas>
     </StackPanel>
 </UserControl>

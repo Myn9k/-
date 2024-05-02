@@ -16,7 +16,7 @@
     </Window.Resources>
     <Canvas>
         <Path StrokeThickness="3" Data="{StaticResource ResourceKey=PathAnimation}" />
-        <Image Height="100" Source="C:\Users\ыыыы\source\repos\lab_13\lab_13_again\Resources\images1.jpg">
+        <Image Height="100" Source="C:\Users\у\Desktop\lab_13\lab_13_again\Resources\images1.jpg">
             <Image.Triggers>
                 <EventTrigger RoutedEvent="Loaded">
                     <BeginStoryboard>
@@ -28,7 +28,7 @@
                 </EventTrigger>
             </Image.Triggers>
         </Image>
-        <Image Height="100" Source="C:\Users\ыыыы\source\repos\lab_13\lab_13_again\Resources\istockphoto-175713154-612x612.jpg">
+        <Image Height="100" Source="C:\Users\у\Desktop\lab_13\lab_13_again\Resources\istockphoto-175713154-612x612.jpg">
             <Image.Triggers>
                 <EventTrigger RoutedEvent="Loaded">
                     <BeginStoryboard>
@@ -40,7 +40,7 @@
                 </EventTrigger>
             </Image.Triggers>
         </Image>
-        <Image Height="100" Source="C:\Users\ыыыы\source\repos\lab_13\lab_13_again\Resources\екркрке.jpg">
+        <Image Height="100" Source="C:\Users\у\Desktop\lab_13\lab_13_again\Resources\екркрке.jpg">
             <Image.Triggers>
                 <EventTrigger RoutedEvent="Loaded">
                     <BeginStoryboard>
@@ -52,7 +52,7 @@
                 </EventTrigger>
             </Image.Triggers>
         </Image>
-        <Image Height="100" Source="C:\Users\ыыыы\source\repos\lab_13\lab_13_again\Resources\images2.png">
+        <Image Height="100" Source="C:\Users\у\Desktop\lab_13\lab_13_again\Resources\images2.png">
             <Image.Triggers>
                 <EventTrigger RoutedEvent="Loaded">
                     <BeginStoryboard>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeCarcas", "MakeCarcas.csproj", "{21555BB2-2952-4834-B005-2D23424560DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21555BB2-2952-4834-B005-2D23424560DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21555BB2-2952-4834-B005-2D23424560DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21555BB2-2952-4834-B005-2D23424560DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21555BB2-2952-4834-B005-2D23424560DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DB6D324-90D4-481C-A430-F34D336D4778}
+	EndGlobalSection
+EndGlobal

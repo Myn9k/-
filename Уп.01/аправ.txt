@@ -1,0 +1,240 @@
+Сделай 15 строк в таблице ssms по типу INSERT INTO Country (Code, Name) VALUES
+('US', 'United States'),
+('CA', 'Canada'),
+('UK', 'United Kingdom'),
+('FR', 'France'),
+('DE', 'Germany');
+ChatGPT
+INSERT INTO Country (Code, Name) VALUES
+('RU', 'Russia'),
+('CN', 'China'),
+('IN', 'India'),
+('BR', 'Brazil'),
+('JP', 'Japan'),
+('AU', 'Australia'),
+('SA', 'Saudi Arabia'),
+('MX', 'Mexico'),
+('ZA', 'South Africa'),
+('KR', 'South Korea'),
+('NG', 'Nigeria'),
+('IT', 'Italy'),
+('AR', 'Argentina'),
+('ES', 'Spain'),
+('ID', 'Indonesia');
+
+User
+Теперь по типу INSERT INTO Hotel (id, Name, CountOfStars, CountryCode) VALUES
+(1, 'Hotel A', 4, 'US'),
+(2, 'Hotel B', 5, 'CA'),
+(3, 'Hotel C', 3, 'UK'),
+(4, 'Hotel D', 4, 'FR'),
+(5, 'Hotel E', 5, 'DE');
+ChatGPT
+INSERT INTO Hotel (id, Name, CountOfStars, CountryCode) VALUES
+(6, 'Hotel F', 4, 'RU'),
+(7, 'Hotel G', 5, 'CN'),
+(8, 'Hotel H', 3, 'IN'),
+(9, 'Hotel I', 4, 'BR'),
+(10, 'Hotel J', 5, 'JP'),
+(11, 'Hotel K', 4, 'AU'),
+(12, 'Hotel L', 3, 'SA'),
+(13, 'Hotel M', 4, 'MX'),
+(14, 'Hotel N', 5, 'ZA'),
+(15, 'Hotel O', 4, 'KR'),
+(16, 'Hotel P', 3, 'NG'),
+(17, 'Hotel Q', 5, 'IT'),
+(18, 'Hotel R', 4, 'AR'),
+(19, 'Hotel S', 3, 'ES'),
+(20, 'Hotel T', 5, 'ID');
+
+User
+теперь по типу INSERT INTO Tour (id, TicketCount, Name, Description, ImagePreview, Price, isActual) VALUES
+(1, 100, 'Tour 1', 'Description 1', 'Image 1', 500.00, 1),
+(2, 150, 'Tour 2', 'Description 2', 'Image 2', 750.00, 1),
+(3, 120, 'Tour 3', 'Description 3', 'Image 3', 600.00, 0),
+(4, 80, 'Tour 4', 'Description 4', 'Image 4', 400.00, 1),
+(5, 200, 'Tour 5', 'Description 5', 'Image 5', 1000.00, 1);
+ChatGPT
+INSERT INTO Tour (id, TicketCount, Name, Description, ImagePreview, Price, isActual) VALUES
+(6, 120, 'Tour 6', 'Description 6', 'Image 6', 650.00, 1),
+(7, 90, 'Tour 7', 'Description 7', 'Image 7', 450.00, 0),
+(8, 180, 'Tour 8', 'Description 8', 'Image 8', 900.00, 1),
+(9, 100, 'Tour 9', 'Description 9', 'Image 9', 550.00, 1),
+(10, 150, 'Tour 10', 'Description 10', 'Image 10', 700.00, 1),
+(11, 80, 'Tour 11', 'Description 11', 'Image 11', 400.00, 0),
+(12, 160, 'Tour 12', 'Description 12', 'Image 12', 800.00, 1),
+(13, 110, 'Tour 13', 'Description 13', 'Image 13', 600.00, 1),
+(14, 130, 'Tour 14', 'Description 14', 'Image 14', 750.00, 1),
+(15, 70, 'Tour 15', 'Description 15', 'Image 15', 350.00, 1),
+(16, 140, 'Tour 16', 'Description 16', 'Image 16', 850.00, 1),
+(17, 95, 'Tour 17', 'Description 17', 'Image 17', 500.00, 0),
+(18, 170, 'Tour 18', 'Description 18', 'Image 18', 950.00, 1),
+(19, 120, 'Tour 19', 'Description 19', 'Image 19', 600.00, 1),
+(20, 180, 'Tour 20', 'Description 20', 'Image 20', 900.00, 1);
+
+User
+Сделай настоящие названия туров и описания
+ChatGPT
+INSERT INTO Tour (id, TicketCount, Name, Description, ImagePreview, Price, isActual) VALUES
+(6, 120, 'Majestic Alps Expedition', 'Embark on a breathtaking journey through the snow-capped peaks of the Alps. This expedition offers a perfect blend of adventure and serenity.', 'Alps_Image.jpg', 650.00, 1),
+(7, 90, 'Tropical Paradise Getaway', 'Escape to a tropical paradise with pristine beaches, crystal-clear waters, and vibrant coral reefs. Indulge in the ultimate relaxation experience.', 'Tropical_Image.jpg', 450.00, 0),
+(8, 180, 'Cultural Odyssey in Kyoto', 'Immerse yourself in the rich cultural heritage of Kyoto, exploring ancient temples, traditional tea ceremonies, and picturesque gardens.', 'Kyoto_Image.jpg', 900.00, 1),
+(9, 100, 'Northern Lights Spectacular', 'Witness the mesmerizing beauty of the Northern Lights in the Arctic Circle. A once-in-a-lifetime experience under the aurora-filled sky.', 'NorthernLights_Image.jpg', 550.00, 1),
+(10, 150, 'Historical Marvels of Rome', 'Step back in time to explore the iconic landmarks of Rome, including the Colosseum, Roman Forum, and the Vatican City.', 'Rome_Image.jpg', 700.00, 1),
+(11, 80, 'Safari Adventure in Serengeti', 'Embark on a thrilling safari adventure in the vast plains of Serengeti. Witness the incredible wildlife and natural wonders of Africa.', 'Serengeti_Image.jpg', 400.00, 0),
+(12, 160, 'Enchanting Santorini Escape', 'Experience the charm of Santorini with its stunning sunsets, white-washed buildings, and crystal-clear Aegean Sea. A romantic getaway like no other.', 'Santorini_Image.jpg', 800.00, 1),
+(13, 110, 'Mystical Machu Picchu Expedition', 'Uncover the mysteries of Machu Picchu and trek through the breathtaking landscapes of the Andes. A journey to the heart of ancient civilization.', 'MachuPicchu_Image.jpg', 600.00, 1),
+(14, 130, 'Serene Bali Retreat', 'Find tranquility in the lush landscapes of Bali, surrounded by tropical forests and serene beaches. A rejuvenating retreat for mind, body, and soul.', 'Bali_Image.jpg', 750.00, 1),
+(15, 70, 'Magical Cappadocia Adventure', 'Discover the surreal landscapes of Cappadocia with its fairy-tale-like rock formations and hot air balloon rides. An adventure filled with wonder.', 'Cappadocia_Image.jpg', 350.00, 1),
+(16, 140, 'Grand Canyon Expedition', 'Explore the awe-inspiring beauty of the Grand Canyon, carved by the Colorado River. A journey into the heart of one of nature's greatest wonders.', 'GrandCanyon_Image.jpg', 850.00, 1),
+(17, 95, 'Cruise Along the Amalfi Coast', 'Sail along the stunning Amalfi Coast, visiting charming coastal villages, enjoying Italian cuisine, and soaking in the Mediterranean sun.', 'AmalfiCoast_Image.jpg', 500.00, 0),
+(18, 170, 'Adventures in the Amazon Rainforest', 'Immerse yourself in the biodiversity of the Amazon Rainforest, encountering unique wildlife and experiencing the wonders of the jungle.', 'AmazonRainforest_Image.jpg', 950.00, 1),
+(19, 120, 'Venetian Romance Retreat', 'Indulge in the romantic atmosphere of Venice, with its iconic canals, historic architecture, and world-class cuisine. A perfect escape for lovers.', 'Venice_Image.jpg', 600.00, 1),
+(20, 180, 'Scenic New Zealand Exploration', 'Discover the breathtaking landscapes of New Zealand, from the fjords of Milford Sound to the geothermal wonders of Rotorua. An adventure for nature enthusiasts.', 'NewZealand_Image.jpg', 900.00, 1);
+
+User
+Какие то ошибки в синтаксисе
+ChatGPT
+Извините за путаницу. Вот исправленный синтаксис:
+
+sql
+Copy code
+INSERT INTO Tour (id, TicketCount, Name, Description, ImagePreview, Price, isActual) VALUES
+(6, 120, 'Majestic Alps Expedition', 'Embark on a breathtaking journey through the snow-capped peaks of the Alps. This expedition offers a perfect blend of adventure and serenity.', 'Alps_Image.jpg', 650.00, 1),
+(7, 90, 'Tropical Paradise Getaway', 'Escape to a tropical paradise with pristine beaches, crystal-clear waters, and vibrant coral reefs. Indulge in the ultimate relaxation experience.', 'Tropical_Image.jpg', 450.00, 0),
+(8, 180, 'Cultural Odyssey in Kyoto', 'Immerse yourself in the rich cultural heritage of Kyoto, exploring ancient temples, traditional tea ceremonies, and picturesque gardens.', 'Kyoto_Image.jpg', 900.00, 1),
+(9, 100, 'Northern Lights Spectacular', 'Witness the mesmerizing beauty of the Northern Lights in the Arctic Circle. A once-in-a-lifetime experience under the aurora-filled sky.', 'NorthernLights_Image.jpg', 550.00, 1),
+(10, 150, 'Historical Marvels of Rome', 'Step back in time to explore the iconic landmarks of Rome, including the Colosseum, Roman Forum, and the Vatican City.', 'Rome_Image.jpg', 700.00, 1),
+(11, 80, 'Safari Adventure in Serengeti', 'Embark on a thrilling safari adventure in the vast plains of Serengeti. Witness the incredible wildlife and natural wonders of Africa.', 'Serengeti_Image.jpg', 400.00, 0),
+(12, 160, 'Enchanting Santorini Escape', 'Experience the charm of Santorini with its stunning sunsets, white-washed buildings, and crystal-clear Aegean Sea. A romantic getaway like no other.', 'Santorini_Image.jpg', 800.00, 1),
+(13, 110, 'Mystical Machu Picchu Expedition', 'Uncover the mysteries of Machu Picchu and trek through the breathtaking landscapes of the Andes. A journey to the heart of ancient civilization.', 'MachuPicchu_Image.jpg', 600.00, 1),
+(14, 130, 'Serene Bali Retreat', 'Find tranquility in the lush landscapes of Bali, surrounded by tropical forests and serene beaches. A rejuvenating retreat for mind, body, and soul.', 'Bali_Image.jpg', 750.00, 1),
+(15, 70, 'Magical Cappadocia Adventure', 'Discover the surreal landscapes of Cappadocia with its fairy-tale-like rock formations and hot air balloon rides. An adventure filled with wonder.', 'Cappadocia_Image.jpg', 350.00, 1),
+(16, 140, 'Grand Canyon Expedition', 'Explore the awe-inspiring beauty of the Grand Canyon, carved by the Colorado River. A journey into the heart of one of nature\'s greatest wonders.', 'GrandCanyon_Image.jpg', 850.00, 1),
+(17, 95, 'Cruise Along the Amalfi Coast', 'Sail along the stunning Amalfi Coast, visiting charming coastal villages, enjoying Italian cuisine, and soaking in the Mediterranean sun.', 'AmalfiCoast_Image.jpg', 500.00, 0),
+(18, 170, 'Adventures in the Amazon Rainforest', 'Immerse yourself in the biodiversity of the Amazon Rainforest, encountering unique wildlife and experiencing the wonders of the jungle.', 'AmazonRainforest_Image.jpg', 950.00, 1),
+(19, 120, 'Venetian Romance Retreat', 'Indulge in the romantic atmosphere of Venice, with its iconic canals, historic architecture, and world-class cuisine. A perfect escape for lovers.', 'Venice_Image.jpg', 600.00, 1),
+(20, 180, 'Scenic New Zealand Exploration', 'Discover the breathtaking landscapes of New Zealand, from the fjords of Milford Sound to the geothermal wonders of Rotorua. An adventure for nature enthusiasts.', 'NewZealand_Image.jpg', 900.00, 1);
+User
+Сообщение 102, уровень 15, состояние 1, строка 12
+Неправильный синтаксис около конструкции "s".
+Сообщение 319, уровень 15, состояние 1, строка 15
+Неправильный синтаксис около ключевого слова "with". Если эта инструкция является обобщенным табличным выражением, предложением xmlnamespaces или предложением в контексте отслеживания изменений, предыдущую инструкцию необходимо завершить точкой с запятой.
+Сообщение 105, уровень 15, состояние 1, строка 16
+Незакрытые кавычки в конце символьной строки ", 900.00, 1);
+".
+ChatGPT
+Извините за путаницу. Вот исправленный вариант с корректным синтаксисом:
+
+sql
+Copy code
+INSERT INTO Tour (id, TicketCount, Name, Description, ImagePreview, Price, isActual) VALUES
+(6, 120, 'Majestic Alps Expedition', 'Embark on a breathtaking journey through the snow-capped peaks of the Alps. This expedition offers a perfect blend of adventure and serenity.', 'Alps_Image.jpg', 650.00, 1),
+(7, 90, 'Tropical Paradise Getaway', 'Escape to a tropical paradise with pristine beaches, crystal-clear waters, and vibrant coral reefs. Indulge in the ultimate relaxation experience.', 'Tropical_Image.jpg', 450.00, 0),
+(8, 180, 'Cultural Odyssey in Kyoto', 'Immerse yourself in the rich cultural heritage of Kyoto, exploring ancient temples, traditional tea ceremonies, and picturesque gardens.', 'Kyoto_Image.jpg', 900.00, 1),
+(9, 100, 'Northern Lights Spectacular', 'Witness the mesmerizing beauty of the Northern Lights in the Arctic Circle. A once-in-a-lifetime experience under the aurora-filled sky.', 'NorthernLights_Image.jpg', 550.00, 1),
+(10, 150, 'Historical Marvels of Rome', 'Step back in time to explore the iconic landmarks of Rome, including the Colosseum, Roman Forum, and the Vatican City.', 'Rome_Image.jpg', 700.00, 1),
+(11, 80, 'Safari Adventure in Serengeti', 'Embark on a thrilling safari adventure in the vast plains of Serengeti. Witness the incredible wildlife and natural wonders of Africa.', 'Serengeti_Image.jpg', 400.00, 0),
+(12, 160, 'Enchanting Santorini Escape', 'Experience the charm of Santorini with its stunning sunsets, white-washed buildings, and crystal-clear Aegean Sea. A romantic getaway like no other.', 'Santorini_Image.jpg', 800.00, 1),
+(13, 110, 'Mystical Machu Picchu Expedition', 'Uncover the mysteries of Machu Picchu and trek through the breathtaking landscapes of the Andes. A journey to the heart of ancient civilization.', 'MachuPicchu_Image.jpg', 600.00, 1),
+(14, 130, 'Serene Bali Retreat', 'Find tranquility in the lush landscapes of Bali, surrounded by tropical forests and serene beaches. A rejuvenating retreat for mind, body, and soul.', 'Bali_Image.jpg', 750.00, 1),
+(15, 70, 'Magical Cappadocia Adventure', 'Discover the surreal landscapes of Cappadocia with its fairy-tale-like rock formations and hot air balloon rides. An adventure filled with wonder.', 'Cappadocia_Image.jpg', 350.00, 1),
+(16, 140, 'Grand Canyon Expedition', 'Explore the awe-inspiring beauty of the Grand Canyon, carved by the Colorado River. A journey into the heart of one of nature\'s greatest wonders.', 'GrandCanyon_Image.jpg', 850.00, 1),
+(17, 95, 'Cruise Along the Amalfi Coast', 'Sail along the stunning Amalfi Coast, visiting charming coastal villages, enjoying Italian cuisine, and soaking in the Mediterranean sun.', 'AmalfiCoast_Image.jpg', 500.00, 0),
+(18, 170, 'Adventures in the Amazon Rainforest', 'Immerse yourself in the biodiversity of the Amazon Rainforest, encountering unique wildlife and experiencing the wonders of the jungle.', 'AmazonRainforest_Image.jpg', 950.00, 1),
+(19, 120, 'Venetian Romance Retreat', 'Indulge in the romantic atmosphere of Venice, with its iconic canals, historic architecture, and world-class cuisine. A perfect escape for lovers.', 'Venice_Image.jpg', 600.00, 1),
+(20, 180, 'Scenic New Zealand Exploration', 'Discover the breathtaking landscapes of New Zealand, from the fjords of Milford Sound to the geothermal wonders of Rotorua. An adventure for nature enthusiasts.', 'NewZealand_Image.jpg', 900.00, 1);
+User
+Сообщение 156, уровень 15, состояние 1, строка 1
+Неправильный синтаксис около ключевого слова "INTO".
+Сообщение 319, уровень 15, состояние 1, строка 15
+Неправильный синтаксис около ключевого слова "with". Если эта инструкция является обобщенным табличным выражением, предложением xmlnamespaces или предложением в контексте отслеживания изменений, предыдущую инструкцию необходимо завершить точкой с запятой.
+Сообщение 105, уровень 15, состояние 1, строка 16
+Незакрытые кавычки в конце символьной строки ", 900.00, 1);
+ChatGPT
+Извините за путаницу. Вот исправленный вариант:
+
+sql
+Copy code
+INSERT INTO Tour (id, TicketCount, Name, Description, ImagePreview, Price, isActual) VALUES
+(6, 120, 'Majestic Alps Expedition', 'Embark on a breathtaking journey through the snow-capped peaks of the Alps. This expedition offers a perfect blend of adventure and serenity.', 'Alps_Image.jpg', 650.00, 1),
+(7, 90, 'Tropical Paradise Getaway', 'Escape to a tropical paradise with pristine beaches, crystal-clear waters, and vibrant coral reefs. Indulge in the ultimate relaxation experience.', 'Tropical_Image.jpg', 450.00, 0),
+(8, 180, 'Cultural Odyssey in Kyoto', 'Immerse yourself in the rich cultural heritage of Kyoto, exploring ancient temples, traditional tea ceremonies, and picturesque gardens.', 'Kyoto_Image.jpg', 900.00, 1),
+(9, 100, 'Northern Lights Spectacular', 'Witness the mesmerizing beauty of the Northern Lights in the Arctic Circle. A once-in-a-lifetime experience under the aurora-filled sky.', 'NorthernLights_Image.jpg', 550.00, 1),
+(10, 150, 'Historical Marvels of Rome', 'Step back in time to explore the iconic landmarks of Rome, including the Colosseum, Roman Forum, and the Vatican City.', 'Rome_Image.jpg', 700.00, 1),
+(11, 80, 'Safari Adventure in Serengeti', 'Embark on a thrilling safari adventure in the vast plains of Serengeti. Witness the incredible wildlife and natural wonders of Africa.', 'Serengeti_Image.jpg', 400.00, 0),
+(12, 160, 'Enchanting Santorini Escape', 'Experience the charm of Santorini with its stunning sunsets, white-washed buildings, and crystal-clear Aegean Sea. A romantic getaway like no other.', 'Santorini_Image.jpg', 800.00, 1),
+(13, 110, 'Mystical Machu Picchu Expedition', 'Uncover the mysteries of Machu Picchu and trek through the breathtaking landscapes of the Andes. A journey to the heart of ancient civilization.', 'MachuPicchu_Image.jpg', 600.00, 1),
+(14, 130, 'Serene Bali Retreat', 'Find tranquility in the lush landscapes of Bali, surrounded by tropical forests and serene beaches. A rejuvenating retreat for mind, body, and soul.', 'Bali_Image.jpg', 750.00, 1),
+(15, 70, 'Magical Cappadocia Adventure', 'Discover the surreal landscapes of Cappadocia with its fairy-tale-like rock formations and hot air balloon rides. An adventure filled with wonder.', 'Cappadocia_Image.jpg', 350.00, 1),
+(16, 140, 'Grand Canyon Expedition', 'Explore the awe-inspiring beauty of the Grand Canyon, carved by the Colorado River. A journey into the heart of one of nature''s greatest wonders.', 'GrandCanyon_Image.jpg', 850.00, 1),
+(17, 95, 'Cruise Along the Amalfi Coast', 'Sail along the stunning Amalfi Coast, visiting charming coastal villages, enjoying Italian cuisine, and soaking in the Mediterranean sun.', 'AmalfiCoast_Image.jpg', 500.00, 0),
+(18, 170, 'Adventures in the Amazon Rainforest', 'Immerse yourself in the biodiversity of the Amazon Rainforest, encountering unique wildlife and experiencing the wonders of the jungle.', 'AmazonRainforest_Image.jpg', 950.00, 1),
+(19, 120, 'Venetian Romance Retreat', 'Indulge in the romantic atmosphere of Venice, with its iconic canals, historic architecture, and world-class cuisine. A perfect escape for lovers.', 'Venice_Image.jpg', 600.00, 1),
+(20, 180, 'Scenic New Zealand Exploration', 'Discover the breathtaking landscapes of New Zealand, from the fjords of Milford Sound to the geothermal wonders of Rotorua. An adventure for nature enthusiasts.', 'NewZealand_Image.jpg', 900.00, 1);
+User
+Теперь так же по типу INSERT INTO HotelImage (id, Hotelid, ImageSource) VALUES
+(1, 1, 'Image A'),
+(2, 2, 'Image B'),
+(3, 3, 'Image C'),
+(4, 4, 'Image D'),
+(5, 5, 'Image E');
+ChatGPT
+INSERT INTO HotelImage (id, Hotelid, ImageSource) VALUES
+(6, 6, 'Image F'),
+(7, 7, 'Image G'),
+(8, 8, 'Image H'),
+(9, 9, 'Image I'),
+(10, 10, 'Image J'),
+(11, 11, 'Image K'),
+(12, 12, 'Image L'),
+(13, 13, 'Image M'),
+(14, 14, 'Image N'),
+(15, 15, 'Image O'),
+(16, 16, 'Image P'),
+(17, 17, 'Image Q'),
+(18, 18, 'Image R'),
+(19, 19, 'Image S'),
+(20, 20, 'Image T');
+
+User
+Переделай с нормальными названиями картинок
+ChatGPT
+INSERT INTO HotelImage (id, Hotelid, ImageSource) VALUES
+(6, 6, 'HotelF_Pool_View.jpg'),
+(7, 7, 'HotelG_Lobby.jpg'),
+(8, 8, 'HotelH_Garden.jpg'),
+(9, 9, 'HotelI_Room.jpg'),
+(10, 10, 'HotelJ_Panorama.jpg'),
+(11, 11, 'HotelK_Poolside.jpg'),
+(12, 12, 'HotelL_Sunset_View.jpg'),
+(13, 13, 'HotelM_Reception.jpg'),
+(14, 14, 'HotelN_Beachfront.jpg'),
+(15, 15, 'HotelO_Terrace.jpg'),
+(16, 16, 'HotelP_Canyon_View.jpg'),
+(17, 17, 'HotelQ_Yacht.jpg'),
+(18, 18, 'HotelR_Rainforest_View.jpg'),
+(19, 19, 'HotelS_Canal_View.jpg'),
+(20, 20, 'HotelT_Mountain_View.jpg');
+
+User
+сделай еще 10 строк по типу INSERT INTO Type (id, Name, Description) VALUES
+(1, 'Adventure', 'Exciting and daring tours'),
+(2, 'Cultural', 'Immersive cultural experiences'),
+(3, 'Relaxation', 'Leisurely and calming vacations'),
+(4, 'Luxury', 'High-end and luxurious accommodations'),
+(5, 'Nature', 'Exploring natural wonders');
+
+с разными названиями
+ChatGPT
+INSERT INTO Type (id, Name, Description) VALUES
+(6, 'Historical', 'Exploring historical landmarks and sites'),
+(7, 'Food and Wine', 'Culinary delights and wine tasting experiences'),
+(8, 'Beachfront', 'Sun, sand, and relaxation by the beach'),
+(9, 'Wildlife Safari', 'Encounters with exotic wildlife in their natural habitats'),
+(10, 'Cityscape', 'Discovering vibrant city life and modern architecture'),
+(11, 'Mountain Expedition', 'Scaling peaks and enjoying mountainous landscapes'),
+(12, 'Island Paradise', 'A secluded escape to pristine island retreats'),
+(13, 'Wellness Retreat', 'Focus on health and well-being with spa and wellness activities'),
+(14, 'Art and Music', 'Immersing in art galleries, museums, and musical experiences'),
+(15, 'Scenic Train Journey', 'Exploring picturesque landscapes through scenic train rides');

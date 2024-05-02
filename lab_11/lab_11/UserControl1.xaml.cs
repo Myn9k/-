@@ -27,7 +27,7 @@ namespace lab_11
         }
         private void ChangeImage()
         {
-            ImgLabel.Content = $"C:\\Users\\ыыыы\\source\\repos\\lab_11\\img\\2.jpg";
+            ImgLabel.Content = $"C:\\Users\\у\\Desktop\\lab_11\\img\\2.jpg";
         }
 
         private double rotationAngle = 0;

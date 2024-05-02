@@ -1,0 +1,22 @@
+﻿<Window x:Class="MakeCarcas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MakeCarcas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Image Source="Resources/123.png" HorizontalAlignment="Left"></Image>
+        <TextBlock Text="APP" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <Grid Grid.Row="2" Background="#FF9D40"></Grid>
+        <Grid Background="#FF9D40" Panel.ZIndex="-2"></Grid>
+        <Frame NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered"  Grid.Row="1" Name="MainFrame" Background="#FFB773"></Frame>
+        <Button Foreground="White" Content="Back" Name="BtnBack" Width="112" HorizontalAlignment="Right" Click="BtnBack_click" Margin="0,0,10,10" FontSize="20"/>
+    </Grid>
+</Window>

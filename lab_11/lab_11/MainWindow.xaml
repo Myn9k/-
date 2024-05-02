@@ -10,7 +10,7 @@
         <Style TargetType="StackPanel">
             <Setter  Property="RenderTransform">
                 <Setter.Value>
-                    <ScaleTransform ScaleX="1" ScaleY="1" CenterX="80"/>
+                    <ScaleTransform ScaleX="1" ScaleY="1" CenterX="90"/>
                 </Setter.Value>
             </Setter>
             <Setter Property="Orientation" Value="Vertical"/>

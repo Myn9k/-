@@ -1,0 +1,58 @@
+﻿<Window x:Class="Lab62.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab62"
+        mc:Ignorable="d"
+        Title="Lab2" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="70">
+            <Label Content="1.txt" Height="30" FontWeight="Bold"/>
+            <Label Content="2.txt" Height="30" />
+            <Label Content="3.txt" Height="30"/>
+        </StackPanel>
+        <WrapPanel Margin="100">
+            <Grid>
+                <Rectangle Fill="Yellow" Height="60" Width="60" Margin="10" />
+                <TextBlock Margin="35">A</TextBlock>
+            </Grid>
+            <Grid>
+                <Rectangle Fill="Red" Height="60" Width="60" Margin="10" />
+                <TextBlock Margin="35">B</TextBlock>
+            </Grid>
+            <Grid>
+                <Rectangle Fill="Green" Height="60" Width="60" Margin="10" />
+                <TextBlock Margin="35">C</TextBlock>
+            </Grid>
+            <Grid>
+                <Rectangle Fill="Blue" Height="60" Width="60" Margin="10" />
+                <TextBlock Margin="35">D</TextBlock>
+            </Grid>
+            <Grid>
+                <Rectangle Fill="Gray" Height="60" Width="60" Margin="10" />
+                <TextBlock Margin="35">E</TextBlock>
+            </Grid>
+            <Grid>
+                <Rectangle Fill="Wheat" Height="60" Width="60" Margin="10" />
+                <TextBlock Margin="35">F</TextBlock>
+            </Grid>
+        </WrapPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" >
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Left" >
+                <Label Content="Последние документы" Height="30" Margin="10"/>
+                <Label Content="1.txt" Height="30" />
+                <Label Content="2.txt" Height="30" />
+                <Label Content="3.txt" Height="30" />
+                <Label Content="4.txt" Height="30" />
+                <Label Content="5.txt" Height="30" />
+                <Label Content="6.txt" Height="30" />
+            </StackPanel>
+            <Button Content="Открыть" Height="30" Margin="10" VerticalAlignment="Top" />
+            <Button Content="Сохранить" Height="30" Margin="10" VerticalAlignment="Top" />
+            <Button Content="Закрыть" Height="30" Margin="10" VerticalAlignment="Top" />
+            <Button Content="Обработать" Height="30" Margin="10" VerticalAlignment="Top" />
+            <Button Content="О программе" Height="30" Margin="10" VerticalAlignment="Top" />
+        </StackPanel>
+    </Grid>
+</Window>

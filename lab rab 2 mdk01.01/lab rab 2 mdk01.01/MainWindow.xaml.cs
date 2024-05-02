@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace lab_rab_2_mdk01._01
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -42,15 +39,15 @@ namespace lab_rab_2_mdk01._01
             }
             else if (areaCheckBox.IsChecked == true)
             {
-                MessageBox.Show($"Периметр: Голочка не поставлена \nОбласть: {area}", "Результат");
+                MessageBox.Show($"Периметр: Гaлочка не поставлена \nОбласть: {area}", "Результат");
             }
             else if (perimeterCheckBox.IsChecked.Value == true)
             {
-                MessageBox.Show("Периметр: " + perimeter + "\nОбласть: Голочка не поставлена", "Результат");
+                MessageBox.Show("Периметр: " + perimeter + "\nОбласть: Гaлочка не поставлена", "Результат");
             }
             else
             {
-                MessageBox.Show($"Периметр: Голочка не поставлена \nОбласть: Голочка не поставлена", "Результат");
+                MessageBox.Show($"Периметр: Гaлочка не поставлена \nОбласть: Гaлочка не поставлена", "Результат");
             }
         }
 
